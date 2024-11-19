@@ -1,0 +1,188 @@
+#hero {
+  --height-span-base: 4rem;
+
+  .main-and-buttons {
+    max-width: 69.6rem;
+  }
+
+  & h1 div {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: bottom;
+    width: min-content;
+    height: var(--height-span-base);
+
+    & span {
+      display: block;
+
+      animation: slideUp 6s ease infinite;
+    }
+
+    & span:nth-child(1),
+    & span:nth-child(4) {
+      color: var(--snitap-sky-mid);
+    }
+    & span:nth-child(2) {
+      color: var(--snitap-joy-mid);
+    }
+    & span:nth-child(3) {
+      color: var(--snitap-leaf-mid);
+    }
+  }
+}
+
+@keyframes slideUp {
+  /* radical static */
+  0%,
+  22% {
+    transform: translateY(0);
+  }
+
+  /* divertida in */
+  23% {
+    transform: translateY(calc(-4rem - 6px));
+  }
+
+  25% {
+    transform: translateY(calc(-4rem + 3px));
+  }
+
+  27% {
+    transform: translateY(calc(-4rem - 1.5px));
+  }
+
+  29% {
+    transform: translateY(calc(-4rem + 1.5px));
+  }
+
+  /* divertida static */
+  33%,
+  55% {
+    transform: translateY(-4rem);
+  }
+
+  /* saudável in */
+  56% {
+    transform: translateY(calc(-8rem - 6px));
+  }
+
+  58% {
+    transform: translateY(calc(-8rem + 3px));
+  }
+
+  60% {
+    transform: translateY(calc(-8rem - 1.5px));
+  }
+
+  62% {
+    transform: translateY(calc(-8rem + 1.5px));
+  }
+
+  /* saudável static */
+  66%,
+  88% {
+    transform: translateY(-8rem);
+  }
+
+  /* radical in */
+  89% {
+    transform: translateY(calc(-12rem - 6px));
+  }
+
+  91% {
+    transform: translateY(calc(-12rem + 3px));
+  }
+
+  93% {
+    transform: translateY(calc(-12rem - 1.5px));
+  }
+
+  95% {
+    transform: translateY(calc(-12rem + 1.5px));
+  }
+
+  100% {
+    transform: translateY(-12rem);
+  }
+}
+
+@media (width >= 1280px) {
+  #hero {
+    --height-span-base: 8rem;
+  }
+
+  @keyframes slideUp {
+    /* radical static */
+    0%,
+    22% {
+      transform: translateY(0);
+    }
+
+    /* divertida in */
+    23% {
+      transform: translateY(calc(-8rem - 15px));
+    }
+
+    25% {
+      transform: translateY(calc(-8rem + 10px));
+    }
+
+    27% {
+      transform: translateY(calc(-8rem - 5px));
+    }
+
+    29% {
+      transform: translateY(calc(-8rem + 5px));
+    }
+
+    /* divertida static */
+    33%,
+    55% {
+      transform: translateY(-8rem);
+    }
+
+    /* saudável in */
+    56% {
+      transform: translateY(calc(-16rem - 15px));
+    }
+
+    58% {
+      transform: translateY(calc(-16rem + 10px));
+    }
+
+    60% {
+      transform: translateY(calc(-16rem - 5px));
+    }
+
+    62% {
+      transform: translateY(calc(-16rem + 5px));
+    }
+
+    /* saudável static */
+    66%,
+    88% {
+      transform: translateY(-16rem);
+    }
+
+    /* radical in */
+    89% {
+      transform: translateY(calc(-24rem - 15px));
+    }
+
+    91% {
+      transform: translateY(calc(-24rem + 10px));
+    }
+
+    93% {
+      transform: translateY(calc(-24rem - 5px));
+    }
+
+    95% {
+      transform: translateY(calc(-24rem + 5px));
+    }
+
+    100% {
+      transform: translateY(-24rem);
+    }
+  }
+}

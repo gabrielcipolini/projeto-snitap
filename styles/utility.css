@@ -33,6 +33,10 @@
   padding-block: 1.2rem;
 }
 
+.py-40 {
+  padding-block: 4rem;
+}
+
 @media (width >= 1280px) {
   .container {
     --px-base: 3.2rem;
