@@ -1,0 +1,62 @@
+* {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --snitap-sun: #ffcd1e;
+  --snitap-sky-mid: #06b6d4;
+  --snitap-sky-light: #67e8f9;
+  --snitap-joy-mid: #db2777;
+  --snitap-joy-light: #f472b6;
+  --snitap-leaf-mid: #16a34a;
+
+  --text-color: #000000;
+  --highlights: #000000;
+  --bg-color: #f4f4f4;
+
+  --ff-syne: "Syne", system-ui, sans-serif;
+  --ff-montserrat: "Montserrat", system-ui, sans-serif;
+
+  --fw-md: 500;
+  --fw-bold: 700;
+  --fs-xl: 3.2rem;
+  --fs-lg: 2.4rem;
+  --fs-base: 1.6rem;
+  --fs-sm: 1.2rem;
+}
+
+@media (width >= 1280px) {
+  :root {
+    --fs-xl: 6.4rem;
+    --fs-lg: 4rem;
+    --fs-sm: 1.4rem;
+  }
+}
+
+html,
+body {
+  color: var(--text-color);
+  font: var(--fw-md) var(--fs-base) / 150% var(--ff-montserrat);
+  overflow-x: hidden;
+}
+
+h1 {
+  font: var(--fw-bold) var(--fs-xl) / 125% var(--ff-syne);
+}
+
+h2 {
+  font: var(--fw-bold) var(--fs-lg) / 120% var(--ff-syne);
+}

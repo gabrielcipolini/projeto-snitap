@@ -1,0 +1,15 @@
+.container {
+  --px-base: 2.4rem;
+  --max-width: 36rem;
+  width: min(var(--max-width), 100% - var(--px-base) * 2);
+  margin-inline: auto;
+
+  border: solid red;
+}
+
+@media (width >= 1280px) {
+  .container {
+    --px-base: 3.2rem;
+    --max-width: 128rem;
+  }
+}
