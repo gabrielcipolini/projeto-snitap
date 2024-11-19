@@ -35,6 +35,7 @@
   --fs-xl: 3.2rem;
   --fs-lg: 2.4rem;
   --fs-base: 1.6rem;
+  --fs-md: 1.2rem;
   --fs-sm: 1.2rem;
 }
 
@@ -42,7 +43,7 @@
   :root {
     --fs-xl: 6.4rem;
     --fs-lg: 4rem;
-    --fs-sm: 1.4rem;
+    --fs-md: 1.4rem;
   }
 }
 
@@ -59,4 +60,9 @@ h1 {
 
 h2 {
   font: var(--fw-bold) var(--fs-lg) / 120% var(--ff-syne);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }

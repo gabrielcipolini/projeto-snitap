@@ -3,8 +3,34 @@
   --max-width: 36rem;
   width: min(var(--max-width), 100% - var(--px-base) * 2);
   margin-inline: auto;
+}
 
-  border: solid red;
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.content-center {
+  justify-content: center;
+}
+
+.margin-left-auto {
+  margin-left: auto;
+}
+
+.margin-right-auto {
+  margin-right: auto;
+}
+
+.py-12 {
+  padding-block: 1.2rem;
 }
 
 @media (width >= 1280px) {

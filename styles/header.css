@@ -1,0 +1,34 @@
+header {
+  & a {
+    padding: 0.8rem;
+    position: relative;
+
+    & span {
+      background-color: var(--snitap-sun);
+      border-radius: 100%;
+
+      font: var(--fw-md) var(--fs-sm) / 130% var(--ff-montserrat);
+
+      position: absolute;
+      top: 0rem;
+      right: 0rem;
+
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  & img {
+    transition: transform 500ms;
+
+    &[src*="logo"]:hover {
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg);
+    }
+
+    &[src*="shopping-bag"]:hover {
+      -webkit-transform: rotate(-20deg);
+      transform: rotate(-20deg);
+    }
+  }
+}
