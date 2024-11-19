@@ -5,12 +5,20 @@
   margin-inline: auto;
 }
 
+.b-radius-80 {
+  border-radius: 8rem;
+}
+
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
+}
+
+.gap-12 {
+  gap: 1.2rem;
 }
 
 .items-center {

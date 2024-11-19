@@ -29,6 +29,47 @@
       color: var(--snitap-leaf-mid);
     }
   }
+
+  & .buttons {
+    --gap-base: 2.4rem;
+    flex-wrap: wrap-reverse;
+    gap: var(--gap-base);
+    margin-top: 4.8rem;
+    text-transform: uppercase;
+    width: fit-content;
+
+    & img {
+      vertical-align: bottom;
+      width: 2.4rem;
+    }
+
+    & a {
+      transition: scale 350ms;
+    }
+
+    & a:nth-child(1) {
+      background-color: var(--snitap-sun);
+      padding: 2.4rem 4.8rem;
+    }
+
+    & a:nth-child(2) {
+      & span {
+        background-color: #fff;
+        padding: 2.4rem;
+      }
+    }
+
+    & a:hover {
+      scale: 1.1;
+    }
+
+    .shadow {
+      box-shadow: 0px 36px 15px rgba(0, 0, 0, 0.01),
+        0px 20px 12px rgba(0, 0, 0, 0.05), 0px 9px 9px rgba(0, 0, 0, 0.09),
+        0px 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 80px;
+    }
+  }
 }
 
 @keyframes slideUp {
@@ -109,6 +150,10 @@
 @media (width >= 1280px) {
   #hero {
     --height-span-base: 8rem;
+
+    & .buttons {
+      --gap-base: 3.2rem;
+    }
   }
 
   @keyframes slideUp {
