@@ -13,12 +13,20 @@
   display: flex;
 }
 
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
 .grid {
   display: grid;
 }
 
 .gap-12 {
   gap: 1.2rem;
+}
+
+.gap-32 {
+  gap: 3.2rem;
 }
 
 .items-center {
