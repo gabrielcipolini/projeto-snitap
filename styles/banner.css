@@ -1,0 +1,36 @@
+.banner {
+  --banner-max-width: 37.5rem;
+  --py-base: 2.4rem;
+  
+  padding-block: var(--py-base);
+
+  margin-inline: auto;
+  max-width: var(--banner-max-width);
+  width: 100%;
+
+  & .scroller {
+    overflow: hidden;
+    width: 100%;
+
+    & .rolling {
+      & img {
+        max-width: 11rem;
+
+        animation: rolling 2s linear infinite;
+      }
+    }
+  }
+}
+
+@keyframes rolling {
+  to {
+    transform: translateX(-132px);
+  }
+}
+
+@media (width >= 1280px) {
+  .banner {
+    --banner-max-width: 128rem;
+    --py-base: 4rem;
+  }
+}

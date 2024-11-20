@@ -1,15 +1,14 @@
 #hero {
   --height-span-base: 4rem;
+  --h1-max-width: 30rem;
   --patins-w-h: 31.2rem;
   --stars1-width: 5.7rem;
   --stars2-width: 2.6rem;
 
-  & > div:nth-child(1) {
-  }
-
   & > div > div:nth-child(1) {
-    max-width: 69.6rem;
+    max-width: var(--h1-max-width);
     height: fit-content;
+
   }
 
   & h1 div {
@@ -226,6 +225,7 @@
 @media (width >= 1280px) {
   #hero {
     --height-span-base: 8rem;
+    --h1-max-width: 69.6rem;
     --stars1-width: 8rem;
     --stars2-width: 4rem;
 

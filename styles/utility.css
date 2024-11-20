@@ -1,12 +1,33 @@
 .container {
   --px-base: 2.4rem;
-  --max-width: 36rem;
+  --max-width: 37.5rem;
   width: min(var(--max-width), 100% - var(--px-base) * 2);
   margin-inline: auto;
+
+  /* border: 1px solid red; */
 }
 
 .b-radius-80 {
   border-radius: 8rem;
+}
+
+.bg-gradient-animate {
+  background: linear-gradient(
+    45deg,
+    var(--snitap-sky-light),
+    var(--snitap-joy-light)
+  );
+
+  background-size: 400%;
+  background-position: 0 50%;
+
+  animation: bg-gradient 20s ease infinite;
+}
+
+@keyframes bg-gradient {
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 .flex {
@@ -23,6 +44,10 @@
 
 .gap-12 {
   gap: 1.2rem;
+}
+
+.gap-24 {
+  gap: 2.4rem;
 }
 
 .gap-32 {
@@ -47,6 +72,10 @@
 
 .py-12 {
   padding-block: 1.2rem;
+}
+
+.py-16 {
+  padding-block: 1.6rem;
 }
 
 .py-40 {
