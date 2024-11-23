@@ -3,8 +3,6 @@
   --max-width: 37.5rem;
   width: min(var(--max-width), 100% - var(--px-base) * 2);
   margin-inline: auto;
-
-  /* border: 1px solid red; */
 }
 
 .b-radius-80 {
@@ -30,6 +28,10 @@
   }
 }
 
+.desktop-only {
+  display: none;
+}
+
 .flex {
   display: flex;
 }
@@ -40,6 +42,10 @@
 
 .grid {
   display: grid;
+}
+
+.gap-08 {
+  gap: 0.8rem;
 }
 
 .gap-12 {

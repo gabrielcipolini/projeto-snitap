@@ -49,9 +49,12 @@
 
 html,
 body {
-  background-color: var(--bg-color);
   color: var(--text-color);
   font: var(--fw-md) var(--fs-base) / 150% var(--ff-montserrat);
+}
+
+body {
+  background-color: var(--bg-color);
   overflow-x: hidden;
 }
 
